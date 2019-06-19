@@ -1,0 +1,8 @@
+- name: Get a specific version of an object.
+  aws_s3:
+    bucket: mybucket
+    object: /my/desired/key.txt
+    version: 48c9ee5131af7a716edc22df9772aa6f
+    dest: /usr/local/myfile.txt
+    mode: get
+# this is to get a specific object
